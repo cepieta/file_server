@@ -45,12 +45,6 @@ node server.js
 - Node.js 14.0 이상
 - Windows/macOS/Linux 지원
 
-
-# 개인 설정 파일
-config.ini
-secrets.txt
-```
-
 ### LICENSE
 ```text
 MIT License
