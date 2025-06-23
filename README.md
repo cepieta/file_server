@@ -7,4 +7,5 @@ node.js 설치 후 npm install실행해 필요한 모듈 설치. 그 다음 star
 2. 파일 올린 IP 기반으로 자신이 올린 파일을 다운로드 및 삭제 기능 (선택가능)
 3. 파일 크기 선택 및 포트 선택 기능
 
+![image](https://github.com/user-attachments/assets/b4c1b03a-9984-42d2-992a-6e180d75f9ce)
 
