@@ -1,0 +1,37 @@
+function updateServerStatus(isRunning, port) {
+            var statusElement = document.getElementById('serverStatus');
+            var stopBtn = document.getElementById('stopServerBtn');
+            var startBtn = document.getElementById('startServerBtn');
+            var restartBtn = document.getElementById('restartServerBtn');
+            
+            console.log('서버 상태 업데이트:', isRunning, '포트:', port);
+            
+            if (statusElement) {
+                if (isRunning) {
+                    statusElement.textContent = '🟢 서버 실행 중 (포트: ' + (port || currentConfig.serverPort || 3000) + ')';
+                    statusElement.className = 'status-indicator running';
+                } else {
+                    statusElement.textContent = '🔴 서버 정지됨';
+                    statusElement.className = 'status-indicator stopped';
+                }
+            }
+            
+            if (stopBtn && startBtn && restartBtn) {
+                if (isRunning) {
+                    stopBtn.style.display = '';
+                    startBtn.style.display = 'none';
+                    restartBtn.style.display = '';
+                    
+                    // 버튼 활성화
+                    stopBtn.disabled = false;
+                    restartBtn.disabled = false;
+                } else {
+                    stopBtn.style.display = 'none';
+                    startBtn.style.display = '';
+                    restartBtn.style.display = 'none';
+                    
+                    // 버튼 활성화
+                    startBtn.disabled = false;
+                }
+            }
+        }

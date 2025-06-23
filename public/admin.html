@@ -1,0 +1,739 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>관리자 패널 - 로컬 파일 공유</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            min-height: 100vh;
+            padding: 20px;
+            color: #333;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 15px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #2c3e50 0%, #34495e 100%);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+
+        .header p {
+            font-size: 1.1rem;
+            opacity: 0.9;
+        }
+
+        .content {
+            padding: 30px;
+        }
+
+        .admin-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+
+        .admin-section {
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .section-title {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+            color: #2c3e50;
+            border-bottom: 2px solid #e9ecef;
+            padding-bottom: 10px;
+        }
+
+        .status-card {
+            background: white;
+            border-radius: 8px;
+            padding: 20px;
+            margin-bottom: 15px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+
+        .status-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            margin-bottom: 10px;
+        }
+
+        .status-label {
+            font-weight: 600;
+            color: #495057;
+        }
+
+        .status-value {
+            font-weight: 500;
+        }
+
+        .status-value.running {
+            color: #28a745;
+        }
+
+        .status-value.stopped {
+            color: #dc3545;
+        }
+
+        .control-buttons {
+            display: flex;
+            gap: 15px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            padding: 12px 25px;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            font-weight: 600;
+        }
+
+        .btn-primary {
+            background: #007bff;
+            color: white;
+        }
+
+        .btn-primary:hover {
+            background: #0056b3;
+            transform: translateY(-2px);
+        }
+
+        .btn-success {
+            background: #28a745;
+            color: white;
+        }
+
+        .btn-success:hover {
+            background: #218838;
+            transform: translateY(-2px);
+        }
+
+        .btn-danger {
+            background: #dc3545;
+            color: white;
+        }
+
+        .btn-danger:hover {
+            background: #c82333;
+            transform: translateY(-2px);
+        }
+
+        .btn-warning {
+            background: #ffc107;
+            color: #212529;
+        }
+
+        .btn-warning:hover {
+            background: #e0a800;
+            transform: translateY(-2px);
+        }
+
+        .settings-form {
+            display: grid;
+            gap: 15px;
+        }
+
+        .form-group {
+            display: flex;
+            flex-direction: column;
+        }
+
+        .form-label {
+            font-weight: 600;
+            margin-bottom: 5px;
+            color: #495057;
+        }
+
+        .form-input, .form-select {
+            padding: 10px;
+            border: 2px solid #e9ecef;
+            border-radius: 5px;
+            font-size: 1rem;
+            transition: border-color 0.3s ease;
+        }
+
+        .form-input:focus, .form-select:focus {
+            outline: none;
+            border-color: #007bff;
+        }
+
+        .checkbox-group {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .checkbox-group input[type="checkbox"] {
+            width: 18px;
+            height: 18px;
+        }
+
+        .ip-files-section {
+            grid-column: 1 / -1;
+            background: #f8f9fa;
+            border-radius: 10px;
+            padding: 25px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+
+        .ip-input-section {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+            align-items: end;
+        }
+
+        .ip-input-group {
+            flex: 1;
+        }
+
+        .file-list {
+            list-style: none;
+            max-height: 400px;
+            overflow-y: auto;
+        }
+
+        .file-item {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 15px;
+            margin-bottom: 10px;
+            background: white;
+            border-radius: 8px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            transition: all 0.3s ease;
+        }
+
+        .file-item:hover {
+            transform: translateX(5px);
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+        }
+
+        .file-info {
+            display: flex;
+            align-items: center;
+            flex: 1;
+        }
+
+        .file-icon {
+            font-size: 1.5rem;
+            margin-right: 15px;
+            color: #007bff;
+        }
+
+        .file-details h4 {
+            color: #333;
+            margin-bottom: 5px;
+        }
+
+        .file-details p {
+            color: #666;
+            font-size: 0.9rem;
+        }
+
+        .file-actions {
+            display: flex;
+            gap: 10px;
+        }
+
+        .no-files {
+            text-align: center;
+            padding: 40px;
+            color: #666;
+            font-style: italic;
+        }
+
+        .alert {
+            padding: 15px;
+            border-radius: 5px;
+            margin-bottom: 20px;
+            display: none;
+        }
+
+        .alert-success {
+            background: #d4edda;
+            color: #155724;
+            border: 1px solid #c3e6cb;
+        }
+
+        .alert-error {
+            background: #f8d7da;
+            color: #721c24;
+            border: 1px solid #f5c6cb;
+        }
+
+        .alert-info {
+            background: #d1ecf1;
+            color: #0c5460;
+            border: 1px solid #bee5eb;
+        }
+
+        @media (max-width: 768px) {
+            .admin-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .ip-input-section {
+                flex-direction: column;
+                align-items: stretch;
+            }
+
+            .control-buttons {
+                flex-direction: column;
+            }
+
+            .file-item {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+
+            .file-actions {
+                margin-top: 10px;
+                width: 100%;
+                justify-content: flex-end;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>⚙️ 관리자 패널</h1>
+            <p>로컬 파일 공유 서버 관리</p>
+        </div>
+
+        <div class="content">
+            <div class="alert" id="alert"></div>
+
+            <div class="admin-grid">
+                <!-- 서버 상태 섹션 -->
+                <div class="admin-section">
+                    <h2 class="section-title">🖥️ 서버 상태</h2>
+                    <div class="status-card">
+                        <div class="status-item">
+                            <span class="status-label">서버 상태:</span>
+                            <span class="status-value" id="serverStatus">확인 중...</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">포트:</span>
+                            <span class="status-value" id="serverPort">-</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">업로드된 파일:</span>
+                            <span class="status-value" id="uploadsCount">-</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">메모리 사용량:</span>
+                            <span class="status-value" id="memoryUsage">-</span>
+                        </div>
+                        <div class="status-item">
+                            <span class="status-label">가동 시간:</span>
+                            <span class="status-value" id="uptime">-</span>
+                        </div>
+                    </div>
+                    <div class="control-buttons">
+                        <button class="btn btn-success" onclick="startServer()">서버 시작</button>
+                        <button class="btn btn-danger" onclick="stopServer()">서버 정지</button>
+                        <button class="btn btn-warning" onclick="refreshStatus()">새로고침</button>
+                    </div>
+                </div>
+
+                <!-- 설정 관리 섹션 -->
+                <div class="admin-section">
+                    <h2 class="section-title">⚙️ 설정 관리</h2>
+                    <form class="settings-form" id="settingsForm">
+                        <div class="form-group">
+                            <label class="form-label">프로그램 제목</label>
+                            <input type="text" class="form-input" id="programTitle" placeholder="프로그램 제목">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">프로그램 부제목</label>
+                            <input type="text" class="form-input" id="programSubtitle" placeholder="프로그램 부제목">
+                        </div>
+                        <div class="form-group">
+                            <label class="form-label">서버 포트</label>
+                            <input type="number" class="form-input" id="serverPortInput" min="1024" max="65535" placeholder="3000">
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="allowDownload">
+                            <label for="allowDownload">파일 다운로드 허용</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="allowUpload">
+                            <label for="allowUpload">파일 업로드 허용</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="allowBrowsing">
+                            <label for="allowBrowsing">파일 목록 보기 허용</label>
+                        </div>
+                        <div class="checkbox-group">
+                            <input type="checkbox" id="allowDelete">
+                            <label for="allowDelete">파일 삭제 허용</label>
+                        </div>
+                        <button type="submit" class="btn btn-primary">설정 저장</button>
+                    </form>
+                </div>
+            </div>
+
+            <!-- IP 기반 파일 관리 섹션 -->
+            <div class="ip-files-section">
+                <h2 class="section-title">📁 IP 기반 파일 관리</h2>
+                <div class="ip-input-section">
+                    <div class="ip-input-group">
+                        <label class="form-label">클라이언트 IP 주소</label>
+                        <input type="text" class="form-input" id="clientIP" placeholder="예: 192.168.1.100">
+                    </div>
+                    <button class="btn btn-primary" onclick="loadIPFiles()">파일 조회</button>
+                    <button class="btn btn-danger" onclick="deleteAllIPFiles()">전체 삭제</button>
+                </div>
+                <ul class="file-list" id="ipFileList">
+                    <li class="no-files">IP 주소를 입력하고 파일을 조회하세요.</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        let currentConfig = {};
+        let currentIP = '';
+        let apiBase = '';
+        if (window.location.protocol === 'file:') {
+            apiBase = 'http://localhost:3000';
+        }
+
+        // DOM 로드 완료 후 실행
+        document.addEventListener('DOMContentLoaded', function() {
+            refreshStatus();
+            loadConfig();
+            setupEventListeners();
+        });
+
+        // 이벤트 리스너 설정
+        function setupEventListeners() {
+            document.getElementById('settingsForm').addEventListener('submit', function(e) {
+                e.preventDefault();
+                saveConfig();
+            });
+
+            document.getElementById('clientIP').addEventListener('keypress', function(e) {
+                if (e.key === 'Enter') {
+                    loadIPFiles();
+                }
+            });
+        }
+
+        // 서버 상태 새로고침
+        async function refreshStatus() {
+            try {
+                const response = await fetch(apiBase + '/api/admin/status');
+                if (response.ok) {
+                    const status = await response.json();
+                    updateStatusDisplay(status);
+                }
+            } catch (error) {
+                console.error('상태 조회 오류:', error);
+                showAlert('error', '서버 상태를 가져올 수 없습니다.');
+            }
+        }
+
+        // 상태 표시 업데이트
+        function updateStatusDisplay(status) {
+            document.getElementById('serverStatus').textContent = 
+                status.serverRunning ? '실행 중' : '정지됨';
+            document.getElementById('serverStatus').className = 
+                `status-value ${status.serverRunning ? 'running' : 'stopped'}`;
+            
+            document.getElementById('serverPort').textContent = status.port;
+            document.getElementById('uploadsCount').textContent = status.uploadsCount;
+            document.getElementById('memoryUsage').textContent = 
+                formatBytes(status.memoryUsage.heapUsed);
+            document.getElementById('uptime').textContent = 
+                formatUptime(status.uptime);
+        }
+
+        // 서버 시작
+        async function startServer() {
+            try {
+                const response = await fetch(apiBase + '/api/admin/start', { method: 'POST' });
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showAlert('success', result.message);
+                    setTimeout(refreshStatus, 1000);
+                } else {
+                    showAlert('error', result.error);
+                }
+            } catch (error) {
+                showAlert('error', '서버 시작에 실패했습니다.');
+            }
+        }
+
+        // 서버 정지
+        async function stopServer() {
+            if (!confirm('서버를 정지하시겠습니까?')) {
+                return;
+            }
+
+            try {
+                const response = await fetch(apiBase + '/api/admin/stop', { method: 'POST' });
+                const result = await response.json();
+                
+                if (response.ok) {
+                    showAlert('success', result.message);
+                    setTimeout(refreshStatus, 1000);
+                } else {
+                    showAlert('error', result.error);
+                }
+            } catch (error) {
+                showAlert('error', '서버 정지에 실패했습니다.');
+            }
+        }
+
+        // 설정 로드
+        async function loadConfig() {
+            try {
+                const response = await fetch(apiBase + '/api/config');
+                if (response.ok) {
+                    currentConfig = await response.json();
+                    updateConfigForm(currentConfig);
+                }
+            } catch (error) {
+                console.error('설정 로드 오류:', error);
+            }
+        }
+
+        // 설정 폼 업데이트
+        function updateConfigForm(config) {
+            document.getElementById('programTitle').value = config.programTitle || '';
+            document.getElementById('programSubtitle').value = config.programSubtitle || '';
+            document.getElementById('serverPortInput').value = config.serverPort || 3000;
+            document.getElementById('allowDownload').checked = config.allowDownload !== false;
+            document.getElementById('allowUpload').checked = config.allowUpload !== false;
+            document.getElementById('allowBrowsing').checked = config.allowBrowsing !== false;
+            document.getElementById('allowDelete').checked = config.allowDelete !== false;
+        }
+
+        // 설정 저장
+        async function saveConfig() {
+            const formData = {
+                programTitle: document.getElementById('programTitle').value,
+                programSubtitle: document.getElementById('programSubtitle').value,
+                serverPort: parseInt(document.getElementById('serverPortInput').value),
+                allowDownload: document.getElementById('allowDownload').checked,
+                allowUpload: document.getElementById('allowUpload').checked,
+                allowBrowsing: document.getElementById('allowBrowsing').checked,
+                allowDelete: document.getElementById('allowDelete').checked
+            };
+
+            try {
+                const response = await fetch(apiBase + '/api/admin/config', {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    },
+                    body: JSON.stringify(formData)
+                });
+
+                const result = await response.json();
+                
+                if (response.ok) {
+                    currentConfig = result.config;
+                    showAlert('success', '설정이 저장되었습니다.');
+                } else {
+                    showAlert('error', result.error);
+                }
+            } catch (error) {
+                showAlert('error', '설정 저장에 실패했습니다.');
+            }
+        }
+
+        // IP 기반 파일 로드
+        async function loadIPFiles() {
+            const ip = document.getElementById('clientIP').value.trim();
+            if (!ip) {
+                showAlert('error', 'IP 주소를 입력해주세요.');
+                return;
+            }
+
+            currentIP = ip;
+            
+            try {
+                const response = await fetch(apiBase + `/api/admin/files/${encodeURIComponent(ip)}`);
+                if (response.ok) {
+                    const files = await response.json();
+                    displayIPFiles(files);
+                } else {
+                    showAlert('error', '파일 목록을 가져올 수 없습니다.');
+                }
+            } catch (error) {
+                showAlert('error', '파일 목록 조회에 실패했습니다.');
+            }
+        }
+
+        // IP 파일 목록 표시
+        function displayIPFiles(files) {
+            const fileList = document.getElementById('ipFileList');
+            
+            if (files.length === 0) {
+                fileList.innerHTML = '<li class="no-files">해당 IP에서 업로드된 파일이 없습니다.</li>';
+                return;
+            }
+
+            fileList.innerHTML = files.map(file => `
+                <li class="file-item">
+                    <div class="file-info">
+                        <div class="file-icon">📄</div>
+                        <div class="file-details">
+                            <h4>${file.name.split('-').slice(2).join('-')}</h4>
+                            <p>${formatFileSize(file.size)} • ${formatDate(file.uploadTime)} • IP: ${file.uploadIP}</p>
+                        </div>
+                    </div>
+                    <div class="file-actions">
+                        <button class="btn btn-danger" onclick="deleteIPFile('${file.name}')">삭제</button>
+                    </div>
+                </li>
+            `).join('');
+        }
+
+        // IP 파일 삭제
+        async function deleteIPFile(filename) {
+            if (!confirm(`파일 "${filename.split('-').slice(2).join('-')}"을 삭제하시겠습니까?`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(apiBase + `/api/admin/files/${encodeURIComponent(currentIP)}/${encodeURIComponent(filename)}`, {
+                    method: 'DELETE'
+                });
+
+                if (response.ok) {
+                    showAlert('success', '파일이 삭제되었습니다.');
+                    loadIPFiles(); // 목록 새로고침
+                } else {
+                    const error = await response.json();
+                    showAlert('error', error.error);
+                }
+            } catch (error) {
+                showAlert('error', '파일 삭제에 실패했습니다.');
+            }
+        }
+
+        // IP 파일 전체 삭제
+        async function deleteAllIPFiles() {
+            if (!currentIP) {
+                showAlert('error', '먼저 IP 주소를 입력하고 파일을 조회해주세요.');
+                return;
+            }
+
+            if (!confirm(`IP ${currentIP}에서 업로드된 모든 파일을 삭제하시겠습니까?`)) {
+                return;
+            }
+
+            try {
+                const response = await fetch(apiBase + `/api/admin/files/${encodeURIComponent(currentIP)}`);
+                if (response.ok) {
+                    const files = await response.json();
+                    
+                    let deletedCount = 0;
+                    for (const file of files) {
+                        try {
+                            const deleteResponse = await fetch(apiBase + `/api/admin/files/${encodeURIComponent(currentIP)}/${encodeURIComponent(file.name)}`, {
+                                method: 'DELETE'
+                            });
+                            if (deleteResponse.ok) {
+                                deletedCount++;
+                            }
+                        } catch (error) {
+                            console.error('파일 삭제 오류:', error);
+                        }
+                    }
+                    
+                    showAlert('success', `${deletedCount}개의 파일이 삭제되었습니다.`);
+                    loadIPFiles(); // 목록 새로고침
+                }
+            } catch (error) {
+                showAlert('error', '전체 삭제에 실패했습니다.');
+            }
+        }
+
+        // 알림 표시
+        function showAlert(type, message) {
+            const alert = document.getElementById('alert');
+            alert.textContent = message;
+            alert.className = `alert alert-${type}`;
+            alert.style.display = 'block';
+
+            setTimeout(() => {
+                alert.style.display = 'none';
+            }, 5000);
+        }
+
+        // 파일 크기 포맷
+        function formatFileSize(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        // 메모리 사용량 포맷
+        function formatBytes(bytes) {
+            if (bytes === 0) return '0 Bytes';
+            const k = 1024;
+            const sizes = ['Bytes', 'KB', 'MB', 'GB'];
+            const i = Math.floor(Math.log(bytes) / Math.log(k));
+            return parseFloat((bytes / Math.pow(k, i)).toFixed(2)) + ' ' + sizes[i];
+        }
+
+        // 가동 시간 포맷
+        function formatUptime(seconds) {
+            const hours = Math.floor(seconds / 3600);
+            const minutes = Math.floor((seconds % 3600) / 60);
+            const secs = Math.floor(seconds % 60);
+            return `${hours}시간 ${minutes}분 ${secs}초`;
+        }
+
+        // 날짜 포맷
+        function formatDate(timestamp) {
+            const date = new Date(timestamp);
+            return date.toLocaleString('ko-KR');
+        }
+
+        // 주기적 상태 업데이트
+        setInterval(refreshStatus, 30000); // 30초마다
+    </script>
+</body>
+</html> 

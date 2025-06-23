@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>로컬 파일 공유</title>
+    <link rel="icon" href="/icon.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: 'Segoe UI', sans-serif; line-height: 1.6; color: #333; background-color: #f5f5f5; }
+        .container { max-width: 1200px; margin: 0 auto; padding: 20px; }
+        .header {
+            text-align: center;
+            margin-bottom: 20px;
+            padding: 20px;
+            background-color: #fff;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+        }
+        .header h1 { font-size: 24px; color: #2c3e50; margin-bottom: 5px; }
+        .upload-section { background-color: #fff; border: 2px dashed #3498db; border-radius: 8px; padding: 40px; text-align: center; margin-bottom: 20px; cursor: pointer; transition: all 0.3s; }
+        .upload-section:hover { border-color: #2980b9; background-color: #f8f9fa; }
+        .upload-section.dragover { border-color: #2ecc71; background-color: #f0f9f0; }
+        .upload-content i { font-size: 48px; color: #3498db; }
+        .file-list { background-color: #fff; border-radius: 8px; padding: 20px; box-shadow: 0 2px 4px rgba(0,0,0,0.1); }
+        .file-item { display: flex; justify-content: space-between; align-items: center; padding: 12px; border-bottom: 1px solid #eee; }
+        .file-item:last-child { border-bottom: none; }
+        .file-info { flex: 1; }
+        .file-name { font-weight: 500; margin-bottom: 4px; }
+        .file-details { font-size: 14px; color: #666; }
+        .file-actions { display: flex; gap: 8px; }
+        .download-btn, .delete-btn { padding: 6px 12px; border: none; border-radius: 4px; cursor: pointer; display: flex; align-items: center; gap: 6px; font-size: 14px; transition: background-color 0.3s; }
+        .download-btn { background-color: #2ecc71; color: white; }
+        .delete-btn { background-color: #e74c3c; color: white; }
+        .no-files { text-align: center; padding: 40px; color: #666; }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <div>
+                <h1 id="programTitle">로컬 파일 공유</h1>
+                <p id="programSubtitle" style="font-size: 16px; opacity: 0.8; color: #555;">드래그 앤 드롭으로 파일을 쉽게 공유하세요</p>
+            </div>
+        </div>
+
+        <div id="uploadSection" class="upload-section">
+            <div class="upload-content">
+                <i class="fas fa-cloud-upload-alt"></i>
+                <p id="programSubtitle">드래그 앤 드롭으로 파일을 쉽게 공유하세요</p>
+            </div>
+            <input type="file" id="file-input" multiple style="display: none;">
+        </div>
+
+        <div class="file-list" id="file-list">
+            <!-- 파일 목록이 여기에 동적으로 추가됩니다 -->
+        </div>
+    </div>
+
+    <script>
+        let currentConfig = {};
+        
+        const uploadSection = document.getElementById('uploadSection');
+        const fileInput = document.getElementById('file-input');
+        const fileListEl = document.getElementById('file-list');
+
+        async function fetchConfigAndFiles() {
+            try {
+                const configRes = await fetch('/api/config');
+                currentConfig = await configRes.json();
+                document.title = currentConfig.programTitle;
+                document.getElementById('programTitle').textContent = currentConfig.programTitle;
+                document.getElementById('programSubtitle').textContent = currentConfig.programSubtitle;
+                if (!currentConfig.allowUpload) {
+                    uploadSection.style.display = 'none';
+                } else {
+                    uploadSection.style.display = 'block';
+                }
+                const filesRes = await fetch('/api/files');
+                const { files, clientIP } = await filesRes.json();
+                renderFiles(files, clientIP);
+            } catch (error) {
+                console.error('Error fetching data:', error);
+                fileListEl.innerHTML = '<div class="error-message">데이터를 불러오는 데 실패했습니다.</div>';
+            }
+        }
+
+        function renderFiles(files, clientIP) {
+            const { allowDownload, allowDelete } = currentConfig;
+            if (files.length === 0) {
+                fileListEl.innerHTML = '<div class="no-files"><i class="fas fa-box-open"></i><p>공유된 파일이 없습니다.</p></div>';
+                return;
+            }
+            fileListEl.innerHTML = files.map(file => {
+                const isUploader = file.uploaderIP && file.uploaderIP === clientIP;
+                const canDownload = allowDownload && isUploader;
+                const canDelete = allowDelete && isUploader;
+                return `
+                    <div class="file-item">
+                        <div class="file-info">
+                            <div class="file-name">${file.name}</div>
+                            <div class="file-details">
+                                <span>${file.size}</span> | <span>${new Date(file.birthtime).toLocaleString()}</span>
+                            </div>
+                        </div>
+                        <div class="file-actions">
+                            ${canDownload ? `<a href="/download/${encodeURIComponent(file.name)}" class="download-btn"><i class="fas fa-download"></i> 다운로드</a>` : ''}
+                            ${canDelete ? `<button class="delete-btn" data-filename="${file.name}"><i class="fas fa-trash"></i> 삭제</button>` : ''}
+                        </div>
+                    </div>
+                `;
+            }).join('');
+        }
+        
+        uploadSection.addEventListener('click', () => fileInput.click());
+        fileInput.addEventListener('change', (e) => handleFiles(e.target.files));
+        
+        ['dragenter', 'dragover', 'dragleave', 'drop'].forEach(eventName => {
+            uploadSection.addEventListener(eventName, (e) => {
+                e.preventDefault();
+                e.stopPropagation();
+            }, false);
+        });
+
+        uploadSection.addEventListener('dragover', () => uploadSection.classList.add('dragover'));
+        uploadSection.addEventListener('dragleave', () => uploadSection.classList.remove('dragover'));
+        uploadSection.addEventListener('drop', (e) => {
+            uploadSection.classList.remove('dragover');
+            handleFiles(e.dataTransfer.files);
+        });
+
+        async function handleFiles(files) {
+            if (!currentConfig.allowUpload) return;
+            const formData = new FormData();
+            for (const file of files) {
+                formData.append('files', file);
+            }
+            try {
+                await fetch('/api/upload', { method: 'POST', body: formData });
+                fetchConfigAndFiles();
+            } catch (error) {
+                console.error('Upload failed:', error);
+                alert('업로드에 실패했습니다.');
+            }
+        }
+
+        fileListEl.addEventListener('click', async (e) => {
+            if (e.target.classList.contains('delete-btn')) {
+                const filename = e.target.dataset.filename;
+                if (confirm(`'${filename}' 파일을 정말 삭제하시겠습니까?`)) {
+                    try {
+                        const res = await fetch(`/api/files/${encodeURIComponent(filename)}`, { method: 'DELETE' });
+                        if (res.ok) {
+                            fetchConfigAndFiles();
+                        } else {
+                            alert('파일 삭제에 실패했습니다.');
+                        }
+                    } catch (error) {
+                         alert('파일 삭제 중 오류가 발생했습니다.');
+                    }
+                }
+            }
+        });
+
+        document.addEventListener('DOMContentLoaded', fetchConfigAndFiles);
+    </script>
+</body>
+</html> 

@@ -1,0 +1,18 @@
+<svg width="256" height="256" viewBox="0 0 256 256" fill="none" xmlns="http://www.w3.org/2000/svg">
+  <!-- 별 -->
+  <polygon points="128,30 148,100 222,100 160,140 180,210 128,170 76,210 96,140 34,100 108,100"
+    fill="#FFD700" stroke="#C9A100" stroke-width="6"/>
+  <!-- 화살표 1 (왼쪽 위) -->
+  <line x1="30" y1="30" x2="110" y2="110" stroke="#3498db" stroke-width="10" marker-end="url(#arrowhead)"/>
+  <!-- 화살표 2 (오른쪽 위) -->
+  <line x1="226" y1="30" x2="146" y2="110" stroke="#e74c3c" stroke-width="10" marker-end="url(#arrowhead)"/>
+  <!-- 화살표 3 (왼쪽 아래) -->
+  <line x1="30" y1="226" x2="110" y2="146" stroke="#2ecc71" stroke-width="10" marker-end="url(#arrowhead)"/>
+  <!-- 화살표 4 (오른쪽 아래) -->
+  <line x1="226" y1="226" x2="146" y2="146" stroke="#f39c12" stroke-width="10" marker-end="url(#arrowhead)"/>
+  <defs>
+    <marker id="arrowhead" markerWidth="10" markerHeight="10" refX="7" refY="3" orient="auto" markerUnits="strokeWidth">
+      <polygon points="0 0, 10 3, 0 6" fill="black"/>
+    </marker>
+  </defs>
+</svg>

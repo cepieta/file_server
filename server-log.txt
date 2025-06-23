@@ -1,0 +1,413 @@
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 80
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+🚀 로컬 파일 공유 서버가 시작되었습니다! 포트: 3000
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+현재 작업 디렉토리: C:\Users\user\Documents\dev\FileShareApp
+실행 파일 위치: C:\Users\user\Documents\dev\FileShareApp\server.js
+uploads 폴더 존재: true
+config.json 존재: true
+server.js baseDir: C:\Users\user\Documents\dev\FileShareApp
+server.js uploadsDir: C:\Users\user\Documents\dev\FileShareApp\uploads
+server.js configPath: C:\Users\user\Documents\dev\FileShareApp\config.json
+

@@ -1,0 +1,112 @@
+[2025-06-20T11:20:49.493Z] === 서버 시작 ===
+[2025-06-20T11:20:49.496Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:20:49.497Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:20:49.497Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:20:49.498Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:20:49.500Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:20:49.503Z] 서버 코드 진입
+[2025-06-20T11:20:49.538Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:22:22.119Z] === 서버 시작 ===
+[2025-06-20T11:22:22.121Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:22:22.121Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:22:22.122Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:22:22.122Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:22:22.126Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:22:22.129Z] 서버 코드 진입
+[2025-06-20T11:22:22.152Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:24:37.583Z] === 서버 시작 ===
+[2025-06-20T11:24:37.586Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:24:37.587Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:24:37.587Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:24:37.588Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:24:37.590Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:24:37.592Z] 서버 코드 진입
+[2025-06-20T11:24:37.622Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:28:30.484Z] === 서버 시작 ===
+[2025-06-20T11:28:30.485Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:28:30.486Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:28:30.486Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:28:30.486Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:28:30.488Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:28:30.489Z] 서버 코드 진입
+[2025-06-20T11:28:30.509Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:29:59.636Z] === 서버 시작 ===
+[2025-06-20T11:29:59.639Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:29:59.640Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:29:59.640Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:29:59.641Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:29:59.643Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:29:59.647Z] 서버 코드 진입
+[2025-06-20T11:29:59.674Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:46:35.767Z] === 서버 시작 ===
+[2025-06-20T11:46:35.786Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:46:35.786Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:46:35.787Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:46:35.787Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:46:35.789Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:46:35.790Z] 서버 코드 진입
+[2025-06-20T11:46:35.805Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:50:52.097Z] === 서버 시작 ===
+[2025-06-20T11:50:52.099Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:50:52.099Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:50:52.100Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:50:52.100Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:50:52.102Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:50:52.104Z] 서버 코드 진입
+[2025-06-20T11:50:52.125Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:53:51.326Z] === 서버 시작 ===
+[2025-06-20T11:53:51.327Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:53:51.327Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:53:51.328Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:53:51.328Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:53:51.329Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:53:51.330Z] 서버 코드 진입
+[2025-06-20T11:53:51.343Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:55:43.054Z] === 서버 시작 ===
+[2025-06-20T11:55:43.055Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:55:43.055Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:55:43.056Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:55:43.056Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:55:43.058Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:55:43.060Z] 서버 코드 진입
+[2025-06-20T11:55:43.077Z] 서버 리스닝 시작: 3000
+[2025-06-20T11:58:34.104Z] === 서버 시작 ===
+[2025-06-20T11:58:34.106Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:58:34.106Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T11:58:34.107Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T11:58:34.107Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T11:58:34.109Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T11:58:34.111Z] 서버 코드 진입
+[2025-06-20T11:58:34.130Z] 서버 리스닝 시작: 3000
+[2025-06-20T12:01:13.422Z] === 서버 시작 ===
+[2025-06-20T12:01:13.424Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:01:13.424Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T12:01:13.424Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T12:01:13.425Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:01:13.426Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T12:01:13.428Z] 서버 코드 진입
+[2025-06-20T12:01:13.444Z] 서버 리스닝 시작: 3000
+[2025-06-20T12:04:48.785Z] === 서버 시작 ===
+[2025-06-20T12:04:48.788Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:04:48.789Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T12:04:48.789Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T12:04:48.790Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:04:48.793Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T12:04:48.795Z] 서버 코드 진입
+[2025-06-20T12:04:48.828Z] 서버 리스닝 시작: 3000
+[2025-06-20T12:07:47.772Z] === 서버 시작 ===
+[2025-06-20T12:07:47.774Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:07:47.775Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T12:07:47.775Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T12:07:47.776Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:07:47.778Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T12:07:47.781Z] 서버 코드 진입
+[2025-06-20T12:07:47.801Z] 서버 리스닝 시작: 3000
+[2025-06-20T12:09:13.374Z] === 서버 시작 ===
+[2025-06-20T12:09:13.376Z] baseDir: C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:09:13.377Z] process.resourcesPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\resources
+[2025-06-20T12:09:13.378Z] process.execPath: C:\Users\user\Documents\dev\FileShareApp\node_modules\electron\dist\electron.exe
+[2025-06-20T12:09:13.378Z] process.cwd(): C:\Users\user\Documents\dev\FileShareApp
+[2025-06-20T12:09:13.380Z] uploadsDir 존재: C:\Users\user\Documents\dev\FileShareApp\uploads
+[2025-06-20T12:09:13.382Z] 서버 코드 진입
+[2025-06-20T12:09:13.403Z] 서버 리스닝 시작: 3000

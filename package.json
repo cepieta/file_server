@@ -1,0 +1,72 @@
+{
+  "name": "file-share-app",
+  "version": "1.0.0",
+  "description": "로컬 파일 공유 데스크톱 애플리케이션",
+  "main": "main.js",
+  "homepage": "./",
+  "scripts": {
+    "start": "electron .",
+    "dev": "electron . --dev",
+    "build": "electron-builder",
+    "build-win": "electron-builder --win --publish never",
+    "dist": "npm run build-win",
+    "pack": "electron-builder --dir"
+  },
+  "build": {
+    "appId": "com.fileshare.localapp",
+    "productName": "로컬 파일 공유",
+    "icon": "icon.ico",
+    "directories": {
+      "output": "dist"
+    },
+    "files": [
+      "main.js",
+      "preload.js",
+      "public/**/*",
+      "config.json",
+      "icon.ico"
+    ],
+    "extraResources": [
+      {
+        "from": "server.js",
+        "to": "server.js"
+      },
+      {
+        "from": "uploads",
+        "to": "uploads"
+      },
+      {
+        "from": "public",
+        "to": "public"
+      },
+      {
+        "from": "config.json",
+        "to": "config.json"
+      }
+    ],
+    "win": {
+      "target": [
+        {
+          "target": "nsis",
+          "arch": [
+            "x64"
+          ]
+        }
+      ],
+      "requestedExecutionLevel": "asInvoker"
+    }
+    
+  },
+  "author": "Your Name",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "fs-extra": "^11.3.0",
+    "multer": "^1.4.5-lts.1",
+    "ws": "^8.18.2"
+  },
+  "devDependencies": {
+    "electron": "^26.0.0",
+    "electron-builder": "^24.6.0"
+  }
+}
